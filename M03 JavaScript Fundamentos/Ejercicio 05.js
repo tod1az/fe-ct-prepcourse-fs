@@ -14,23 +14,42 @@ function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
+
+   //str='palabra' =>Estamos cambiando el valor de str
+   //str==='palabra' =>Estamos comparando str con palabra
+   str=str+'!'
+   return str
 }
+
 
 function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
+   let nombreCompleto = nombre+' '+apellido
+
+   return nombreCompleto
 }
+
+
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
+   let saludo = 'Hola '+nombre+'!'
+   return saludo
 }
+
+
+
+console.log(obtenerSaludo('Martin'))
+
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
+   return alto*ancho
 }
 
 function retornarPerimetro(lado) {
@@ -55,6 +74,8 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
+   if(letra==='a'||letra==='e'||letra==='i'||letra==='o'||letra==='u')return 'Es vocal'
+   return 'Dato incorrecto'
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
